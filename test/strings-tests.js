@@ -1,5 +1,5 @@
 const assert = require('assert');
-const tasks = require('../src/strings-tasks');
+const tasks = require('../src/*');
 it.optional = require('../extensions/it-optional');
 
 describe('strings-tasks', () => {
@@ -525,7 +525,7 @@ describe('strings-tasks', () => {
     }
   );
 });
-
+//
 describe('strings-tasks optimal implementation', () => {
   it.optional('optimal implementation of concatenateStrings', function test() {
     let fnStr = tasks.concatenateStrings.toString();
